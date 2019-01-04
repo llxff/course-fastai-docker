@@ -22,4 +22,4 @@ RUN apt-get install -y git sudo unzip vim && \
     bash -c 'pip install ipywidgets' && \
     bash -c 'jupyter nbextension enable --py widgetsnbextension --sys-prefix'
 
-CMD jupyter notebook --allow-root
+CMD bash -c -i 'jupyter notebook --allow-root'
